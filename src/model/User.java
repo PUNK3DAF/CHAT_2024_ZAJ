@@ -57,7 +57,7 @@ public class User implements Serializable {
 
     @Override
     public int hashCode() {
-        int hash = 3;
+        int hash = 7;
         return hash;
     }
 
@@ -73,10 +73,7 @@ public class User implements Serializable {
             return false;
         }
         final User other = (User) obj;
-        if (!Objects.equals(this.username, other.username)) {
-            return false;
-        }
-        return Objects.equals(this.pass, other.pass);
+        return Objects.equals(this.username, other.username);
     }
 
 }
